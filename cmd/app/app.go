@@ -9,6 +9,7 @@ import (
 	"github.com/Logiase/MiraiGo-Template/utils"
 
 	_ "github.com/Logiase/MiraiGo-Template/modules/logging"
+	_ "github.com/Logiase/MiraiGo-Template/modules/transfer"
 )
 
 func init() {
@@ -26,7 +27,7 @@ func main() {
 	// 使用协议
 	// 不同协议可能会有部分功能无法使用
 	// 在登陆前切换协议
-	bot.UseProtocol(bot.AndroidPhone)
+	bot.UseProtocol(bot.IPad)
 
 	// 登录
 	bot.Login()
